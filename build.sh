@@ -1,5 +1,5 @@
 go-bindata -pkg file -o all.go ./all.txt
-rm ./file/*
+mkdir file
 mv ./all.go file/
 go build
-rm ./file/*
+rm -rf ./file
