@@ -24,7 +24,7 @@ func httpGet(url string) {
     if err == nil {
 		defer resp.Body.Close()
 
-		if (resp.StatusCode < 400) {
+		if (resp.StatusCode < 300) {
 			fmt.Println(url)
 		}
 	} else {
